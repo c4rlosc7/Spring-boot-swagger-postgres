@@ -1,0 +1,13 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres # string de conexion para postgres
+    username: postgres                             # usuario
+    password: admin                                # password
+    driver-class-name: org.postgresql.Driver       # drive para postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop                        # automaticamente se crear la estructura de la base de datos
+    generate-ddl: true
+    show-sql: true                                 # muestra las sentencias en consola    
